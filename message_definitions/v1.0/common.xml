@@ -1,5 +1,5 @@
-<!-- Takiが変更1 -->
 <?xml version="1.0"?>
+<!-- Takiが変更1 -->
 <mavlink>
   <include>minimal.xml</include>
   <version>3</version>
