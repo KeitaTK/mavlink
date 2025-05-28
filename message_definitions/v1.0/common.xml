@@ -5627,7 +5627,7 @@
       <extensions/>
       <field type="uint8_t" name="breach_mitigation" enum="FENCE_MITIGATE">Active action to prevent fence breach</field>
     </message>
-      <message id="190" name="TAKI_CUSTOME1">
+    <message id="190" name="TAKI_CUSTOME1">
       <description>Request the autopilot version from the system/component.</description>
       <field type="uint8_t" name="target_system">System ID.</field>
       <field type="uint8_t" name="target_component">Component ID.</field>
