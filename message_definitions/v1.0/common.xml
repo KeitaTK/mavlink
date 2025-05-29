@@ -5627,22 +5627,14 @@
       <extensions/>
       <field type="uint8_t" name="breach_mitigation" enum="FENCE_MITIGATE">Active action to prevent fence breach</field>
     </message>
+
     <message id="190" name="TAKI_CUSTOME1">
-      <description>Version and capability of autopilot software. This should be emitted in response to a request with MAV_CMD_REQUEST_MESSAGE.</description>
-      <field type="uint64_t" name="capabilities" enum="MAV_PROTOCOL_CAPABILITY" display="bitmask">Bitmap of capabilities</field>
-      <field type="uint32_t" name="flight_sw_version">Firmware version number</field>
-      <field type="uint32_t" name="middleware_sw_version">Middleware version number</field>
-      <field type="uint32_t" name="os_sw_version">Operating system version number</field>
-      <field type="uint32_t" name="board_version">HW / board version (last 8 bits should be silicon ID, if any). The first 16 bits of this field specify https://github.com/ardupilot/ardupilot/blob/master/Tools/AP_Bootloader/board_types.txt</field>
-      <field type="uint8_t[8]" name="flight_custom_version">Custom version field, commonly the first 8 bytes of the git hash. This is not an unique identifier, but should allow to identify the commit using the main version number even for very large code bases.</field>
-      <field type="uint8_t[8]" name="middleware_custom_version">Custom version field, commonly the first 8 bytes of the git hash. This is not an unique identifier, but should allow to identify the commit using the main version number even for very large code bases.</field>
-      <field type="uint8_t[8]" name="os_custom_version">Custom version field, commonly the first 8 bytes of the git hash. This is not an unique identifier, but should allow to identify the commit using the main version number even for very large code bases.</field>
-      <field type="uint16_t" name="vendor_id">ID of the board vendor</field>
-      <field type="uint16_t" name="product_id">ID of the product</field>
-      <field type="uint64_t" name="uid_taki">UID if provided by hardware (see uid2)</field>
-      <extensions/>
-      <field type="uint8_t[18]" name="uid2">UID if provided by hardware (supersedes the uid field. If this is non-zero, use this field, otherwise use uid)</field>
+      <description>Simple custom message for testing</description>
+      <field type="uint32_t" name="test_counter">Test counter value</field>
+      <field type="uint16_t" name="taki_system_id">System ID</field>
+      <field type="uint16_t" name="taki_component_id">Component ID</field>
     </message>
+
 
     <!-- MESSAGE IDs 180 - 229: Space for custom messages in individual projectname_messages.xml files -->
     <!-- 192 MAG_CAL_REPORT imported from ardupilotmega.xml -->
