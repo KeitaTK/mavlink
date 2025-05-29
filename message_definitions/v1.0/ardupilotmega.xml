@@ -1694,6 +1694,11 @@
       <field type="uint8_t" name="custom_len">Custom Byte Length.</field>
       <field type="uint8_t[24]" name="custom_bytes">Custom Bytes.</field>
     </message>
+    <message id="189" name="TAKI_CUSTOME1_REQUEST">
+      <description>Request the autopilot version from the system/component.</description>
+      <field type="uint8_t" name="target_system">System ID.</field>
+      <field type="uint8_t" name="target_component">Component ID.</field>
+    </message>
     <message id="191" name="MAG_CAL_PROGRESS">
       <description>Reports progress of compass calibration.</description>
       <field type="uint8_t" name="compass_id" instance="true">Compass being calibrated.</field>
