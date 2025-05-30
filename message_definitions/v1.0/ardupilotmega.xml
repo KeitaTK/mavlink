@@ -2062,5 +2062,11 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
+    <message id="2201" name="TAKI_POS_MOTIVE">
+      <description>External coordinate input</description>
+      <field type="float" name="x_coord">X coordinate</field>
+      <field type="float" name="y_coord">Y coordinate</field>
+      <field type="float" name="z_coord">Z coordinate</field>
+    </message>
   </messages>
 </mavlink>
